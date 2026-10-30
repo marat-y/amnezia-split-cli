@@ -195,7 +195,7 @@ def list_entries(filter_text):
 
 def build_parser():
     parser = argparse.ArgumentParser(
-        prog="amnezia",
+        prog="amnezia-cli",
         description="Управление сайтовыми исключениями AmneziaVPN",
     )
     commands = parser.add_subparsers(dest="command", required=True)
