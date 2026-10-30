@@ -3,14 +3,28 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "amnezia-cli"
-version = "0.1.0"
-description = "CLI для раздельного туннелирования AmneziaVPN на macOS"
+name = "amnezia-split-cli"
+version = "0.2.0"
+description = "Safe CLI for AmneziaVPN site-based split tunneling on macOS"
+readme = "README.md"
 requires-python = ">=3.9"
+license = {file = "LICENSE"}
 dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.urls]
+Homepage = "https://github.com/marat-y/amnezia-split-cli"
+Issues = "https://github.com/marat-y/amnezia-split-cli/issues"
 
 [project.scripts]
-amnezia-cli = "amnezia_cli.cli:main"
+amnezia-split-cli = "amnezia_split_cli.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
